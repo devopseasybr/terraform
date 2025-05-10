@@ -17,6 +17,8 @@ subscription_id = "<informe_sua_subscription>"
 3. Aplique o script
 
 ```bash
+cd azure/resource_group/
+
 terraform init
 terraform fmt
 terraform validate
