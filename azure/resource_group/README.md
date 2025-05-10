@@ -6,7 +6,15 @@
 az login
 ```
 
-2. Aplique o script
+2. Configure a sua subscription no arquivo main.tf
+
+```bash
+. . . 
+subscription_id = "<informe_sua_subscription>" 
+
+```
+
+3. Aplique o script
 
 ```bash
 terraform init
@@ -16,13 +24,13 @@ terraform plan
 terraform apply
 ```
 
-3. Liste o recurso criado
+4. Liste o recurso criado
 
 ```bash
 az group list | grep -E "id|name"
 ```
 
-4. Destrua o recurso
+5. Destrua o recurso
 
 ```bash
 terraform destroy
