@@ -1,7 +1,16 @@
+<h1 align="center" style="border-bottom: none">
+    <img alt="Azure" src="../img/azure.png" width="200" height="200">
+</h1>
+
+<center><h1>Azure</h1></center>
+
+<p align="center">Acesse o <a href="https://learn.microsoft.com/en-us/azure/?product=popular" target="_blank">site oficial</a> 
+para uma documentação completa, exemplos e guias.</p>
+
 # Provedor Cloud Azure
 
  Conjunto abrangente de serviços de computação em nuvem criado pela Microsoft.   
- 
+
  Ele permite que você construa, implemente e gerencie aplicativos e serviços através de uma rede global de data centers gerenciados pela Microsoft.
 
 ## Principais Produtos e Serviços Azure
@@ -69,3 +78,32 @@ graph LR
 * Locks:
 * IAM;
 * Policies.
+
+## ARM - Azure Resource Manager
+
+[Serviço](https://azure.microsoft.com/pt-br/get-started/azure-portal/resource-manager) nativo da Azure, escrito no formato Json.
+
+## Terraform Provider
+
+https://registry.terraform.io/providers/hashicorp/azurerm/latest
+
+## Autenticação Local
+
+Use o comando az
+```bash
+az login
+```
+
+Siga esse [procedimento](https://learn.microsoft.com/pt-br/cli/azure/install-azure-cli-windows?view=azure-cli-latest&pivots=winget) para instalar o comando Azure CLI.
+
+Para ajuda do comando, use a sintaxe abaixo:
+
+```bash
+az <command> <subcommand> --help
+```
+
+## Provedores oficiais
+
+* [Azurerm](https://registry.terraform.io/providers/hashicorp/azurerm/latest);
+* [Azurestack](https://registry.terraform.io/providers/hashicorp/azurestack/latest);
+* [Azuread](https://registry.terraform.io/providers/hashicorp/azuread/latest);
