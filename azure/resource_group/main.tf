@@ -1,6 +1,7 @@
 provider "azurerm" {
   features {}
-    subscription_id = "68e78a20-dc3e-4cf9-9068-a958cc746bb6" 
+    # - Saída do comando az login
+    subscription_id = "<informe_sua_subscription>" 
 }
 
 resource "azurerm_resource_group" "grupo-recurso" {
